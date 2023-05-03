@@ -6,17 +6,17 @@ This is a template repository that can be used to quickly create a python packag
 ===============
 Getting Started 
 ===============
-Follow the steps in the [Getting Started](https://automationmojo.github.io/akit-quickstart/automation/usermanual/20-getting-started.html) tutorial to get started using this template.
+Follow the steps in the `Getting Started <userguide/02-00-getting-started.rst>`_ tutorial to get started using this template.
 
 =====================
 Brand Your Repository
 =====================
-Follow the [Repository Branding](https://automationmojo.github.io/akit-quickstart/automation/usermanual/00-repository-branding.html) tutorial to brand your automation project and repository.
+Follow the `Repository Branding <userguide/00-00-repository-branding.rst>`_ tutorial to brand your automation project and repository.
 
 ========================
 Build Your Documentation
 ========================
-Follow the [Build the Documentation] tutorial.
+Follow the `Build the Documentation <11-00-documentation-build.rst>`_ tutorial.
 
 ==========
 References
