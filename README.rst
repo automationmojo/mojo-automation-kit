@@ -22,5 +22,5 @@ Follow the [Build the Documentation] tutorial.
 References
 ==========
 
-- `User Guide <userguide/userguide.rst>`
-- `Coding Standards <userguide/10-00-coding-standards.rst>`
+- `User Guide <userguide/userguide.rst>`_
+- `Coding Standards <userguide/10-00-coding-standards.rst>`_
