@@ -3,7 +3,6 @@
 import configparser
 import os
 import platform
-import shutil
 import sys
 import subprocess
 
@@ -78,7 +77,8 @@ def generate_python_path():
 
     #TODO: Add any PYTHONPATH customizations here.
 
-    python_path = "{}/packages:{}/testroots/testplus:{}".format(
+    python_path = "{}/testroots/testplus:{}/packages:{}/testroots/testplus:{}".format(
+        REPOSITORY_SOURCE_FOLDER,
         REPOSITORY_SOURCE_FOLDER,
         REPOSITORY_SOURCE_FOLDER,
         VENV_SITEPACKAGES_FOLDER)
