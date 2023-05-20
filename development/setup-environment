@@ -40,7 +40,7 @@ fi
 
 echo "ENV_FILE=$ENV_FILE"
 
-COMMAND_ALIAS=""
+CUSTOM_CLI_ALIAS=""
 CUSTOM_CLI_ENTRY_SCRIPT=""
 PROJECT_NAME=""
 PYTHON_VERSION=""
@@ -56,7 +56,7 @@ then
     exit 1
 fi
 
-echo "COMMAND_ALIAS=$COMMAND_ALIAS"
+echo "CUSTOM_CLI_ALIAS=$CUSTOM_CLI_ALIAS"
 echo "CUSTOM_CLI_ENTRY_SCRIPT=$CUSTOM_CLI_ENTRY_SCRIPT"
 echo "PROJECT_NAME=$PROJECT_NAME"
 echo "PYTHON_VERSION=$PYTHON_VERSION"
@@ -90,19 +90,19 @@ function customize_activate_script() {
     echo "" >> $ACTIVATE_SCRIPT
 
     # Check for custom commandline additions
-    if [ ! -z "$COMMAND_ALIAS" ] || [ ! -z "$CUSTOM_CLI_ENTRY_SCRIPT" ];
+    if [ ! -z "$CUSTOM_CLI_ALIAS" ] || [ ! -z "$CUSTOM_CLI_ENTRY_SCRIPT" ];
     then
-        if [ ! -z "$COMMAND_ALIAS" ] && [ ! -z "$CUSTOM_CLI_ENTRY_SCRIPT" ];
+        if [ ! -z "$CUSTOM_CLI_ALIAS" ] && [ ! -z "$CUSTOM_CLI_ENTRY_SCRIPT" ];
         then
-            echo "# Create an alias for the $COMMAND_ALIAS command" >> $ACTIVATE_SCRIPT
-            echo "function $COMMAND_ALIAS () {" >> $ACTIVATE_SCRIPT
+            echo "# Create an alias for the $CUSTOM_CLI_ALIAS command" >> $ACTIVATE_SCRIPT
+            echo "function $CUSTOM_CLI_ALIAS () {" >> $ACTIVATE_SCRIPT
             echo "    \"$VIRTUAL_ENV_BIN_DIR/python3\" \"$CUSTOM_CLI_ENTRY_SCRIPT\" \$@ " >> $ACTIVATE_SCRIPT
             echo "}"  >> $ACTIVATE_SCRIPT
-            echo "export -f $COMMAND_ALIAS"  >> $ACTIVATE_SCRIPT
+            echo "export -f $CUSTOM_CLI_ALIAS"  >> $ACTIVATE_SCRIPT
             echo ""  >> $ACTIVATE_SCRIPT
         fi
     else
-        echo "To add a custom commandline, you must set both 'COMMAND_ALIAS' and 'CUSTOM_CLI_ENTRY_SCRIPT'"
+        echo "To add a custom commandline, you must set both 'CUSTOM_CLI_ALIAS' and 'CUSTOM_CLI_ENTRY_SCRIPT'"
         exit 1
     fi
     
@@ -136,6 +136,7 @@ if [ ! -f $INITIALIZED_FILE ]; then
 
 else
     echo "Virtual environment already intialized..."
+
 fi
 
 echo "---------------------------------------------------------------------------------------"
