@@ -1,5 +1,5 @@
 
-NOTE: You should not put a '__init__.py' file in this folder.  The sub folders
+NOTE: You should not put a `__init__.py` file in this folder.  The sub folders
 of this folder are the root of your packages.
 
 packages/org
