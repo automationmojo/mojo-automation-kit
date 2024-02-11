@@ -39,6 +39,9 @@ To get started working in the *ExOrg QA* environment, you will first need to clo
     git clone git@github.com:exorg/exorg-qa.git exorg-qa
     cd exorg-qa
 
+Re-Home the Repostitory
+=======================
+
 After you clone the repository, you will need to rehome the repository so the workspace task and
 debug configurations work properly in your VSCode development environment.
 
@@ -46,13 +49,22 @@ debug configurations work properly in your VSCode development environment.
 
     setup/rehome-repository
 
-After rehoming your repository, you will also need to make sure all the dependencies are installed and
+Re-homing the repository modifies the configuration files by affixing the location of code and resources on
+the local machine.
+
+Installing System Dependencies
+==============================
+You will also need to make sure all the dependencies are installed and
 configured on your machine, in order for it to support the automation environment.  This is done by running
 the setup script.
 
 .. code-block:: bash
 
     setup/setup-machine
+
+
+Opening the VSCode Workspace
+============================
 
 After you have setup the machine and rehomed the repository, you can open an automation workspace by
 opening the workspace located at.
@@ -63,6 +75,7 @@ opening the workspace located at.
 
 Note that the file above will not exist if you have not rehomed the repository.  You will only see ".template"
 files in the workspaces folder until you re-home the repository.
+
 
 
 Automation Environment Setup
