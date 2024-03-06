@@ -64,7 +64,10 @@ advanced dependency injection test framework similar to **pytest** but with enha
 optimizations and feature enhancements that make **TestPlus** scale better for more complexed automation
 scenarios.
 
-.. list-table:: ** Feature Comparison Chart **
+Feature Comparison Chart
+------------------------
+
+.. list-table::
    :widths: 200, 40, 40, 200
    :header-rows: 1
 
