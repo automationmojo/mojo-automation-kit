@@ -86,6 +86,18 @@ Feature Comparison Chart
    * - Factory Method Setup/Teardown
      - Yes
      - Yes
+     -
+   * - Mobile Resource Factories
+     - Yes
+     - No
+     - Resource factories are not locked to a scope like fixtures are.
+   * - Test Discovery
+     - Yes
+     - Yes
+     - 
+   * - Include & Exclude Test Selection
+     - Yes
+     - No
      - 
    * - Variable Aliases
      - Yes
@@ -99,10 +111,19 @@ Feature Comparison Chart
      - Yes
      - No
      - Integration resources can participate in environment startup.
-   * - Mobile Resource Factories
+   * - Distinct Query Execution
      - Yes
      - No
-     - Resource factories are not locked to a scope like fixtures are.
+     - 
+   * - Fixed Integration and Test Sequence
+     - Yes
+     - No
+     - Jobs class means test environment startup is always a consistent sequence of steps.
+   * - Specifically design for distributed automation configuration and protocol extensibility
+     - Yes
+     - No
+     - TestPlus integration support for configuration, credential and protocol management
+
 
 
 Test Automation Software Stack
