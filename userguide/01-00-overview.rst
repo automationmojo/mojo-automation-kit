@@ -72,15 +72,37 @@ Feature Comparison Chart
    :header-rows: 1
 
    * - Feature
-     - Pytest
      - TestPlus
+     - Pytest
      - Notes
    * - Dependency Injection
      - Yes
      - Yes
      - 
-  
-
+   * - Extensible
+     - Yes
+     - Yes
+     -
+   * - Factory Method Setup/Teardown
+     - Yes
+     - Yes
+     - 
+   * - Variable Aliases
+     - Yes
+     - No
+     - Simple variable names passed to functions.
+   * - Debugger Friendly
+     - Yes
+     - No
+     - Flat test sequence execution.  No looping of dependencies.
+   * - Integration Resources
+     - Yes
+     - No
+     - Integration resources can participate in environment startup.
+   * - Mobile Resource Factories
+     - Yes
+     - No
+     - Resource factories are not locked to a scope like fixtures are.
 
 
 Test Automation Software Stack
