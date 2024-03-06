@@ -57,6 +57,27 @@ Your going to want to brand the core, product and test layers of the automation 
 that are appropriate for your organization.
 
 
+Feature Comparison
+==================
+The **Automation Kit** is based on a python test framework called **TestPlus**.  **TestPlus** is an
+advanced dependency injection test framework similar to **pytest** but with enhanced workflow
+optimizations and feature enhancements that make **TestPlus** scale better for more complexed automation
+scenarios.
+
+.. list-table:: Feature Comparison Chart
+   :widths: 40, 30, 30
+   :header-rows: 1
+
+   * - Feature
+     - Pytest
+     - TestPlus
+   * - Dependency Injection
+     - Yes
+     - Yes
+  
+
+
+
 Test Automation Software Stack
 ==============================
 
