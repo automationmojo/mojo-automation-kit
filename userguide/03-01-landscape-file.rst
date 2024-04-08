@@ -56,6 +56,69 @@ Serial Sub-Section
 Full Example
 ------------
 
-.. literalinclude:: examples/landscape.yaml
-   :language: yaml
+.. code:: yaml
+
+    environment:
+        label: production
+    
+    apod:
+    
+        # ================================================================================
+        # ================================================================================
+        #
+        #                             CLIENT DEVICES
+        #
+        # ================================================================================
+        # ================================================================================
+        clients:
+    
+        # ==========================================================
+        -   deviceType: network/client-linux
+            name: casey-01
+            host: 172.16.1.31
+            role: taskerserver
+            credentials:
+            -    pi-cluster
+            features:
+                isolation: false
+            skip: false
+    
+        -   deviceType: network/client-linux
+            name: casey-02
+            host: 172.16.1.32
+            role: taskerserver
+            credentials:
+            -    pi-cluster
+            features:
+                isolation: false
+            skip: false
+    
+        -   deviceType: network/client-linux
+            name: casey-03
+            host: 172.16.1.33
+            role: taskerserver
+            credentials:
+            -    pi-cluster
+            features:
+                isolation: false
+            skip: false
+        
+        -   deviceType: network/client-linux
+            name: casey-04
+            host: 172.16.1.34
+            role: taskerserver
+            credentials:
+            -    pi-cluster
+            features:
+                isolation: false
+            skip: false
+    
+    infrastructure:
+        services:
+            - serviceType: network/service
+              name: someservice
+              credentials:
+                  - adminuser
+
+
 
