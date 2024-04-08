@@ -57,8 +57,8 @@ Full Example
 ------------
 .. code-block:: yaml
 
-    environment:
-        label: production
+environment:
+    label: production
 
     pod:
 
