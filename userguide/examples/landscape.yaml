@@ -1,0 +1,55 @@
+
+environment:
+    label: production
+
+apod:
+
+    clients:
+
+    # ==========================================================
+    -   deviceType: network/client-linux
+        name: casey-01
+        host: 192.167.1.21
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
+
+    -   deviceType: network/client-linux
+        name: casey-02
+        host: 192.167.1.22
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
+
+    -   deviceType: network/client-linux
+        name: casey-03
+        host: 192.167.1.23
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
+    
+    -   deviceType: network/client-linux
+        name: casey-04
+        host: 192.167.1.24
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
+
+infrastructure:
+    services:
+        - serviceType: network/service
+          name: someservice
+          credentials:
+              - adminuser
