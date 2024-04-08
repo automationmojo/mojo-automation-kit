@@ -57,7 +57,7 @@ Create your Repository
 Because the **Automation Kit Quick Start** repository is setup as a template repository, when
 you view it in GitHub, you will see a **Use this Template** button.
 
-.. image:: /images/github-use-template.jpg
+.. image:: images/github-use-template.jpg
     :width: 600
     :alt: Use Template Button Image
 
