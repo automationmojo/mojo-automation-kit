@@ -56,7 +56,7 @@ Serial Sub-Section
 Full Example
 ------------
 .. code-block:: yaml
-
+    
     environment:
         label: production
 
