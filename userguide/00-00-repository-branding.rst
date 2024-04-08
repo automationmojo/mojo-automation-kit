@@ -48,9 +48,9 @@ With the ** Automation Kit ** , you can be up and running automation code agains
 organizations infrastructure in weeks or months. The ** Automation Kit ** supports a
 variety of protocols out of the box including.
 
- * SSH
- * REST
- * Tasker (RPyC)
+- SSH
+- REST
+- Tasker (RPyC)
 
 Create your Repository
 ======================
