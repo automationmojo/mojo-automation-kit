@@ -133,7 +133,7 @@ The **Automation Kit** is meant to serve as a foundation of an automation softwa
 stack.  The diagram below and the descriptions in this section describe the automation
 software stack that the **Automation Kit** is meant to be a part of.
 
-.. image:: /_static/images/testing-software-stack.jpg
+.. image:: images/testing-software-stack.jpg
   :width: 600
   :alt: Test Automation Software Stack
 
@@ -162,7 +162,7 @@ in the enterprise.  The **Automation Kit** and core components of the software s
 are not closely aligned with the product under test, can be stored in repositories and
 deployed based on repository style deployment techniques.
 
-.. image:: /_static/images/testing-software-stack-alignment.jpg
+.. image:: images/testing-software-stack-alignment.jpg
   :width: 600
   :alt: Product Alignment
 
@@ -177,7 +177,7 @@ The software stack also divides up the code by **Risk and Impact**.  Because the
 test code layer.  They have a higher risk when it comes to code changes.  They also are
 shared and so have higher impact.
 
-.. image:: /_static/images/testing-software-stack-impact.jpg
+.. image:: images/testing-software-stack-impact.jpg
   :width: 600
   :alt: Risk and Impact
 
@@ -189,7 +189,7 @@ maintaining stricter processes and higher quality in the high impact code.  We c
 put special layer appropriate testing proceedures in place for the code at the core and
 intergation layers.
 
-.. image:: /_static/images/testing-software-stack-testscopes.jpg
+.. image:: images/testing-software-stack-testscopes.jpg
   :width: 600
   :alt: Testing Scope
 
@@ -211,7 +211,7 @@ intend to utilize the **Automation Kit** would extend the base object model by b
 an integration layer and product layer that sits on top of the **Automation Kit** layer
 as depicted in the diagram below.
 
-.. image:: /_static/images/organization-test-software-stack.jpg
+.. image:: images/organization-test-software-stack.jpg
   :width: 600
   :alt: Test Automation Software Stack
 
@@ -248,7 +248,7 @@ process of querying the fixture for information about the test resources that wi
 required or utilized by the test run and provides the fixtures with an opportunity to
 integrate any required resources.
 
-.. image:: /_static/images/akit-integration-model.jpg
+.. image:: images/akit-integration-model.jpg
   :width: 600
   :alt: Integration Object Model
 
