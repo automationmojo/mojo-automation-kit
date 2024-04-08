@@ -4,7 +4,6 @@ import argparse
 import configparser
 import os
 import platform
-import shutil
 import sys
 import subprocess
 
