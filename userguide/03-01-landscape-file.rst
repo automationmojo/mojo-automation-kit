@@ -75,7 +75,7 @@ Full Example
         # ==========================================================
         -   deviceType: network/client-linux
             name: casey-01
-            host: 172.16.1.31
+            host: 192.187.1.31
             role: taskerserver
             credentials:
             -    pi-cluster
@@ -85,7 +85,7 @@ Full Example
     
         -   deviceType: network/client-linux
             name: casey-02
-            host: 172.16.1.32
+            host: 192.187.1.32
             role: taskerserver
             credentials:
             -    pi-cluster
@@ -95,7 +95,7 @@ Full Example
     
         -   deviceType: network/client-linux
             name: casey-03
-            host: 172.16.1.33
+            host: 192.187.1.33
             role: taskerserver
             credentials:
             -    pi-cluster
@@ -105,7 +105,7 @@ Full Example
         
         -   deviceType: network/client-linux
             name: casey-04
-            host: 172.16.1.34
+            host: 192.187.1.34
             role: taskerserver
             credentials:
             -    pi-cluster
