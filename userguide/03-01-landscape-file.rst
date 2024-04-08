@@ -56,9 +56,6 @@ Serial Sub-Section
 Full Example
 ------------
 
-.. literalinclude:: ./examples/landscape.yaml
-   :language: yaml
-
 .. code-block:: yaml
 
     environment:
