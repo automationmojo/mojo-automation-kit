@@ -274,7 +274,6 @@ stack has its own directory root directory in the installed site-packages folder
 from different layers is not intermigled when the packages are installed.
 
 .. note::
-    
     There are alot of patterns around code organization and naming conventions that are utilized
     which may not have an obvious reasons.  This is the kind of minor details that you have to
     either have experience with or really use forward thinking to catch before they cause an issue.
