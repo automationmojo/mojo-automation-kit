@@ -63,62 +63,62 @@ Full Example
     
     apod:
     
-        # ================================================================================
-        # ================================================================================
-        #
-        #                             CLIENT DEVICES
-        #
-        # ================================================================================
-        # ================================================================================
-        clients:
+    # ================================================================================
+    # ================================================================================
+    #
+    #                             CLIENT DEVICES
+    #
+    # ================================================================================
+    # ================================================================================
+    clients:
     
-        # ==========================================================
-        -   deviceType: network/client-linux
-            name: casey-01
-            host: 192.187.1.31
-            role: taskerserver
-            credentials:
-            -    pi-cluster
-            features:
-                isolation: false
-            skip: false
+    # ==========================================================
+    -   deviceType: network/client-linux
+        name: casey-01
+        host: 192.187.1.31
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
     
-        -   deviceType: network/client-linux
-            name: casey-02
-            host: 192.187.1.32
-            role: taskerserver
-            credentials:
-            -    pi-cluster
-            features:
-                isolation: false
-            skip: false
+    -   deviceType: network/client-linux
+        name: casey-02
+        host: 192.187.1.32
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
     
-        -   deviceType: network/client-linux
-            name: casey-03
-            host: 192.187.1.33
-            role: taskerserver
-            credentials:
-            -    pi-cluster
-            features:
-                isolation: false
-            skip: false
-        
-        -   deviceType: network/client-linux
-            name: casey-04
-            host: 192.187.1.34
-            role: taskerserver
-            credentials:
-            -    pi-cluster
-            features:
-                isolation: false
-            skip: false
+    -   deviceType: network/client-linux
+        name: casey-03
+        host: 192.187.1.33
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
+    
+    -   deviceType: network/client-linux
+        name: casey-04
+        host: 192.187.1.34
+        role: taskerserver
+        credentials:
+        -    pi-cluster
+        features:
+            isolation: false
+        skip: false
     
     infrastructure:
-        services:
-            - serviceType: network/service
-              name: someservice
-              credentials:
-                  - adminuser
+    services:
+        - serviceType: network/service
+          name: someservice
+          credentials:
+              - adminuser
 
 
 
