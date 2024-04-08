@@ -57,5 +57,5 @@ Full Example
 ------------
 
 .. literalinclude:: examples/landscape.yaml
-  :language: yaml
+   :language: yaml
 
