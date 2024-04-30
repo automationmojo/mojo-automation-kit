@@ -60,7 +60,12 @@ VENV_FOLDER = os.path.join(REPOSITORY_FOLDER, ".venv")
 VENV_BIN_FOLDER = os.path.join(VENV_FOLDER, "bin")
 VENV_PYTHON_BINARY = os.path.join(VENV_BIN_FOLDER, "python")
 VENV_ACTIVATE_SCRIPT = os.path.join(VENV_BIN_FOLDER, "activate")
-VENV_SITEPACKAGES_FOLDER = os.path.join(VENV_FOLDER, "lib", PYTHON_VERSION, "site-packages")
+
+VENV_SITEPACKAGES_FOLDER = None
+if platform.system() != "Windows":
+    VENV_SITEPACKAGES_FOLDER = os.path.join(VENV_FOLDER, "lib", PYTHON_VERSION, "site-packages")
+else:
+    VENV_SITEPACKAGES_FOLDER = os.path.join(VENV_FOLDER, "Lib", PYTHON_VERSION, "site-packages")
 
 
 def replace_macros(template_line):
