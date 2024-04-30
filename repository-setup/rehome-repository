@@ -87,16 +87,16 @@ def generate_python_path():
 
     #TODO: Add any PYTHONPATH customizations here.
 
-    python_path = "{}/testroots/testplus:{}/packages:{}/testroots/testplus:{}".format(
-        REPOSITORY_SOURCE_FOLDER,
-        REPOSITORY_SOURCE_FOLDER,
-        REPOSITORY_SOURCE_FOLDER,
+    python_path = f"{}:{}:{}".format(
+        os.path.join(REPOSITORY_SOURCE_FOLDER}, 'testroots', 'testplus'),
+        os.path.join(REPOSITORY_SOURCE_FOLDER}, 'tools'),
+        os.path.join(REPOSITORY_SOURCE_FOLDER}, 'packages'),
         VENV_SITEPACKAGES_FOLDER)
     return python_path
 
 def generate_development_env_file():
 
-    env_file = "{}/.env".format(REPOSITORY_FOLDER)
+    env_file = os.path.join(REPOSITORY_FOLDER, ".env")
     with open(env_file, 'w') as envf:
         envf.write("PYTHON_VERSION=\"{}\"".format(PYTHON_VERSION))
         envf.write(os.linesep)
