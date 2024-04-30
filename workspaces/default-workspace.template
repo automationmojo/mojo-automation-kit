@@ -12,12 +12,13 @@
         },
         "terminal.integrated.profiles.linux": {
             "virtual-env": {
-                "path": "${TMPLT:REPOSITORY_FOLDER}/.venv/bin/activate"
+                "path": "${TMPLT:VENV_ACTIVATE_SCRIPT}"
             }
         },
         "python.analysis.extraPaths": [
             "${TMPLT:VENV_SITEPACKAGES_FOLDER}",
-            "${TMPLT:REPOSITORY_PACKAGES_FOLDER}"
+            "${TMPLT:REPOSITORY_PACKAGES_FOLDER}",
+            "${TMPLT:REPOSITORY_TOOLS_FOLDER}"
         ],
         "python.terminal.activateEnvInCurrentTerminal": true
     }
